@@ -6,5 +6,3 @@ https://youtube.com/playlist?list=PLlsmxlJgn1HJpa28yHzkBmUY-Ty71ZUGc&si=hyV8TM0l
 1. Abstract Factory - 생성 패턴
 2. Factory Method - 생성 패턴
 3. Chain of Responsibility - 행동 패턴
-4. Command - 행동 패턴
-5. Mediator - 행동 패턴
