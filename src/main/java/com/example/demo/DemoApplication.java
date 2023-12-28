@@ -7,6 +7,7 @@ import com.example.demo.design.patterns.ChainOfResponsibility.ChainOfResponsibil
 import com.example.demo.design.patterns.DesignPattern;
 import com.example.demo.design.patterns.FactoryMethod.FactoryMethod;
 import com.example.demo.design.patterns.Strategy.Strategy;
+import com.example.demo.design.patterns.TemplateMethod.TemplateMethod;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -20,6 +21,7 @@ public class DemoApplication implements CommandLineRunner {
 	DesignPattern adapter = new Adapter();
 	DesignPattern bridge = new Bridge();
 	DesignPattern strategy = new Strategy();
+	DesignPattern templateMethod = new TemplateMethod();
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
@@ -27,6 +29,6 @@ public class DemoApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-
+		templateMethod.run();
 	}
 }
