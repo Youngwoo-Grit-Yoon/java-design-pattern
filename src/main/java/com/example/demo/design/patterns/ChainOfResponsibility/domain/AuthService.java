@@ -1,6 +1,6 @@
-package com.example.demo.design.patterns.ChainOfResponsibility;
+package com.example.demo.design.patterns.ChainOfResponsibility.domain;
 
-import com.example.demo.design.patterns.ChainOfResponsibility.handler.Handler;
+import com.example.demo.design.patterns.ChainOfResponsibility.domain.handler.Handler;
 
 public class AuthService {
     private final Handler handler;

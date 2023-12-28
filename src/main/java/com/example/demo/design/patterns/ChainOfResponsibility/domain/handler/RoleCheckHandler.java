@@ -1,4 +1,4 @@
-package com.example.demo.design.patterns.ChainOfResponsibility.handler;
+package com.example.demo.design.patterns.ChainOfResponsibility.domain.handler;
 
 public class RoleCheckHandler extends Handler {
     @Override

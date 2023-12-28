@@ -1,4 +1,4 @@
-package com.example.demo.design.patterns.ChainOfResponsibility;
+package com.example.demo.design.patterns.ChainOfResponsibility.domain;
 
 import java.util.HashMap;
 import java.util.Map;

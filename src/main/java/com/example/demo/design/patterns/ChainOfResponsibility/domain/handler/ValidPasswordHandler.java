@@ -1,6 +1,6 @@
-package com.example.demo.design.patterns.ChainOfResponsibility.handler;
+package com.example.demo.design.patterns.ChainOfResponsibility.domain.handler;
 
-import com.example.demo.design.patterns.ChainOfResponsibility.Database;
+import com.example.demo.design.patterns.ChainOfResponsibility.domain.Database;
 
 public class ValidPasswordHandler extends Handler {
     private final Database database;
