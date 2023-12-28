@@ -64,3 +64,21 @@ public class ChainOfResponsibility implements DesignPattern {
     }
 }
 ```
+### Adapter - 구조 패턴
+```text
+public class Adapter implements DesignPattern  {
+    @Override
+    public void run() {
+        XmlData xmlData = new XmlData();
+
+        // Old
+        DatabaseStatistics databaseStatisticsApp = new DatabaseStatisticsApp();
+        databaseStatisticsApp.showInboundCalls(xmlData);
+
+        // New
+        BoardStatisticsApp boardStatisticsApp = new BoardStatisticsApp();
+        DatabaseStatistics boardStatisticsAppAdapter = new BoardStatisticsAppAdapter(boardStatisticsApp);
+        boardStatisticsAppAdapter.showInboundCalls(xmlData);
+    }
+}
+```
