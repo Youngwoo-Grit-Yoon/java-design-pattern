@@ -82,3 +82,23 @@ public class Adapter implements DesignPattern  {
     }
 }
 ```
+### Bridge - 구조 패턴
+```text
+public class Bridge implements DesignPattern {
+    @Override
+    public void run() {
+        Company bank = new Bank();
+        Company insurance = new Insurance();
+        Company securities = new Securities();
+
+        AlarmService email = new Email(bank);
+        email.send();
+
+        AlarmService push = new Push(insurance);
+        push.send();
+
+        AlarmService sms = new SMS(securities);
+        sms.send();
+    }
+}
+```
