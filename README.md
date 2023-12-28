@@ -102,3 +102,18 @@ public class Bridge implements DesignPattern {
     }
 }
 ```
+### Strategy - 행동 패턴
+```text
+public class Strategy implements DesignPattern {
+    @Override
+    public void run() {
+        BankClient client = new BankClient("윤영우");
+
+        WelcomeService welcomeService = new WelcomeService(client);
+        welcomeService.setStrategy(new PushStrategy());
+        welcomeService.processService();
+        welcomeService.setStrategy(new SmsStrategy());
+        welcomeService.processService();
+    }
+}
+```

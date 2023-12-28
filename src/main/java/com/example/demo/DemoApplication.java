@@ -6,6 +6,7 @@ import com.example.demo.design.patterns.Bridge.Bridge;
 import com.example.demo.design.patterns.ChainOfResponsibility.ChainOfResponsibility;
 import com.example.demo.design.patterns.DesignPattern;
 import com.example.demo.design.patterns.FactoryMethod.FactoryMethod;
+import com.example.demo.design.patterns.Strategy.Strategy;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,6 +19,7 @@ public class DemoApplication implements CommandLineRunner {
 	DesignPattern factoryMethod = new FactoryMethod();
 	DesignPattern adapter = new Adapter();
 	DesignPattern bridge = new Bridge();
+	DesignPattern strategy = new Strategy();
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
@@ -25,6 +27,6 @@ public class DemoApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		bridge.run();
+
 	}
 }
