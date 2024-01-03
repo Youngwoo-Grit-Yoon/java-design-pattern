@@ -12,7 +12,6 @@ import com.example.demo.design.patterns.TemplateMethod.TemplateMethod;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.util.StringUtils;
 
 @SpringBootApplication
 public class DemoApplication implements CommandLineRunner {
