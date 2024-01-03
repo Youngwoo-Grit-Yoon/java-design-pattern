@@ -6,11 +6,13 @@ import com.example.demo.design.patterns.Bridge.Bridge;
 import com.example.demo.design.patterns.ChainOfResponsibility.ChainOfResponsibility;
 import com.example.demo.design.patterns.DesignPattern;
 import com.example.demo.design.patterns.FactoryMethod.FactoryMethod;
+import com.example.demo.design.patterns.JavaInterfaceExample.JavaInterfaceExample;
 import com.example.demo.design.patterns.Strategy.Strategy;
 import com.example.demo.design.patterns.TemplateMethod.TemplateMethod;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.util.StringUtils;
 
 @SpringBootApplication
 public class DemoApplication implements CommandLineRunner {
@@ -22,6 +24,7 @@ public class DemoApplication implements CommandLineRunner {
 	DesignPattern bridge = new Bridge();
 	DesignPattern strategy = new Strategy();
 	DesignPattern templateMethod = new TemplateMethod();
+	DesignPattern javaInterfaceExample = new JavaInterfaceExample();
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
@@ -29,6 +32,6 @@ public class DemoApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		templateMethod.run();
+
 	}
 }
